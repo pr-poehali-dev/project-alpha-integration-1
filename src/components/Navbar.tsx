@@ -41,31 +41,31 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <span className="text-white font-semibold text-lg">DataPulse</span>
+            <span className="text-white font-semibold text-lg">Дмитрий Янев</span>
           </div>
         </a>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-white/70 transition duration-200 hover:text-white md:flex md:space-x-2">
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#features">
-            <span className="relative z-20">Возможности</span>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#services">
+            <span className="relative z-20">Услуги</span>
           </a>
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#pricing">
-            <span className="relative z-20">Тарифы</span>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#cases">
+            <span className="relative z-20">Кейсы</span>
           </a>
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#integrations">
-            <span className="relative z-20">Интеграции</span>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#about">
+            <span className="relative z-20">Обо мне</span>
           </a>
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#docs">
-            <span className="relative z-20">Документация</span>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#contact">
+            <span className="relative z-20">Контакты</span>
           </a>
         </div>
 
         <div className="flex items-center gap-3">
           <a
-            href="#demo"
+            href="#contact"
             className="rounded-lg font-medium relative cursor-pointer hover:-translate-y-0.5 transition-all duration-200 inline-block text-center px-4 py-2 text-sm border bg-gradient-to-r from-blue-600 to-indigo-600 border-blue-400/30 text-white hover:from-blue-500 hover:to-indigo-500"
           >
-            Попробовать бесплатно
+            Бесплатная консультация
           </a>
         </div>
       </header>
@@ -88,7 +88,7 @@ export default function Navbar() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
-          <span className="text-white font-semibold">DataPulse</span>
+          <span className="text-white font-semibold">Дмитрий Янев</span>
         </a>
 
         <button
@@ -120,40 +120,40 @@ export default function Navbar() {
           >
             <nav className="flex flex-col space-y-4">
               <a
-                href="#features"
+                href="#services"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
               >
-                Возможности
+                Услуги
               </a>
               <a
-                href="#pricing"
+                href="#cases"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
               >
-                Тарифы
+                Кейсы
               </a>
               <a
-                href="#integrations"
+                href="#about"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
               >
-                Интеграции
+                Обо мне
               </a>
               <a
-                href="#docs"
+                href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
               >
-                Документация
+                Контакты
               </a>
               <div className="border-t border-white/20 pt-4 mt-4 flex flex-col space-y-3">
                 <a
-                  href="#demo"
+                  href="#contact"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-4 py-3 text-lg font-bold text-center rounded-lg transition-all duration-200 border bg-gradient-to-r from-blue-600 to-indigo-600 border-blue-400/30 text-white"
                 >
-                  Попробовать бесплатно
+                  Бесплатная консультация
                 </a>
               </div>
             </nav>
