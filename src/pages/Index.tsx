@@ -38,32 +38,86 @@ const services = [
 
 const cases = [
   {
+    niche: "Новое кафе — подписчики ВКонтакте",
+    channel: "VK Ads",
+    result: "976 живых подписчиков за 54 715 ₽",
+    metric: "CPF 56 ₽",
+    metricColor: "emerald",
+    steps: [
+      "Протестировал 30 креативов на аудиторию подписчиков конкурентов",
+      "Выявил самый отзывчивый сегмент по полу и возрасту через A/B-тесты",
+      "Сузил аудиторию по полученным данным — стоимость подписчика упала вдвое",
+    ],
+    highlight: "Только живые, заинтересованные подписчики — без накруток и ботов",
+  },
+  {
+    niche: "Пылесос против пылевых клещей — Wildberries",
+    channel: "VK Ads + Яндекс Дзен",
+    result: "Рост заказов на 304%",
+    metric: "+304% заказов",
+    metricColor: "blue",
+    steps: [
+      "Выявил узкую ЦА: аллергики и астматики — те, кто реально нуждается в товаре",
+      "Создал лендинг и экспертную статью в Яндекс Дзен о пользе для здоровья",
+      "Запустил многоступенчатую воронку: реклама → WB → ретаргет → Дзен → WB → покупка",
+      "Подключил бартерных блогеров для усиления доверия к продукту",
+    ],
+    highlight: "Многоступенчатый ретаргетинг «догревал» аудиторию до покупки",
+  },
+  {
+    niche: "Рекрутинг на военную службу",
+    channel: "VK Ads + Чат-бот",
+    result: "273 заявки за 100 918 ₽",
+    metric: "CPL 370 ₽",
+    metricColor: "emerald",
+    steps: [
+      "Сегментировал аудиторию по лестнице Бена Ханта — от тёплых до холодных",
+      "Разработал чат-бота для автоматического приёма контактных данных",
+      "Провёл серию тестов CTR на разных аудиториях и форматах объявлений",
+      "Нашёл лучшую связку и масштабировал до нужного объёма заявок",
+    ],
+    highlight: "Чат-бот обрабатывал заявки 24/7 без участия менеджера",
+  },
+  {
+    niche: "Одежда на Wildberries — внутренняя реклама",
+    channel: "WB Реклама + Marpla + MKeeper",
+    result: "Рост заказов на 217%",
+    metric: "+217% заказов",
+    metricColor: "blue",
+    steps: [
+      "Отключил неэффективные кампании с минимальной ставкой — они сжигали бюджет",
+      "Протестировал CTR каждой карточки через сервис Marpla",
+      "Запустил ручные кампании с показами в поиске, подключил аналитику MKeeper",
+      "Отключил нерелевантные кластеры, повысил CPM на НЧ/СЧ запросы для выхода в топ-50",
+      "После попадания в топ-50 органики — снизил ставки, сохранив позиции",
+    ],
+    highlight: "Ни рубля лишнего: каждый кластер управлялся по данным, а не наугад",
+  },
+  {
     niche: "Интернет-магазин одежды",
     channel: "VK Ads",
-    result: "Снизил стоимость заявки с 480₽ до 140₽",
-    detail: "Пересобрал аудитории через Target Hunter, протестировал 12 гипотез по лестнице Ханта, нашёл связку — масштабировал бюджет ×3.",
-    roas: "ROAS 680%",
+    result: "Стоимость заявки: с 480 ₽ до 140 ₽",
+    metric: "ROAS 680%",
+    metricColor: "emerald",
+    steps: [
+      "Пересобрал аудитории через Target Hunter по активности конкурентов",
+      "Протестировал 12 гипотез по методу лестницы Бена Ханта",
+      "Нашёл прибыльную связку и масштабировал рекламный бюджет в 3 раза",
+    ],
+    highlight: "Стоимость лида снизилась в 3,4 раза без увеличения бюджета",
   },
   {
     niche: "Юридические услуги",
     channel: "Яндекс Директ",
     result: "Рост заявок на 210% за 2 месяца",
-    detail: "Аудит старого аккаунта, пересегментация кампаний, работа с минус-словами и корректировками ставок. Бюджет остался прежним.",
-    roas: "CPL −62%",
-  },
-  {
-    niche: "Фитнес-студия",
-    channel: "Лендинг + VK Ads",
-    result: "148 записей на пробное занятие за месяц",
-    detail: "Разработал конверсионный лендинг с оффером, запустил таргет по активным участникам фитнес-сообществ. Конверсия лендинга — 11%.",
-    roas: "Конверсия 11%",
-  },
-  {
-    niche: "Строительная компания",
-    channel: "Avito Ads",
-    result: "47 горячих обращений за первые 3 недели",
-    detail: "Оформил профиль, написал продающие объявления, подключил платное продвижение по целевым категориям. Стоимость обращения — 320₽.",
-    roas: "CPL 320₽",
+    metric: "CPL −62%",
+    metricColor: "blue",
+    steps: [
+      "Провёл полный аудит рекламного аккаунта и выявил слив бюджета",
+      "Пересегментировал кампании по типам запросов и аудиторий",
+      "Проработал минус-слова и корректировки ставок по демографии",
+    ],
+    highlight: "Бюджет не изменился — просто перестал тратиться впустую",
   },
 ]
 
@@ -194,19 +248,31 @@ export default function Index() {
               {cases.map((c) => (
                 <div
                   key={c.niche}
-                  className="p-7 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-blue-400/30 transition-all duration-300"
+                  className="p-7 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-blue-400/30 transition-all duration-300 flex flex-col gap-4"
                 >
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between">
                     <span className="text-xs font-semibold uppercase tracking-widest text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full border border-blue-400/20">
                       {c.channel}
                     </span>
-                    <span className="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full border border-emerald-400/20">
-                      {c.roas}
+                    <span className={`text-xs font-bold px-3 py-1 rounded-full border ${c.metricColor === "emerald" ? "text-emerald-400 bg-emerald-400/10 border-emerald-400/20" : "text-blue-300 bg-blue-400/10 border-blue-400/20"}`}>
+                      {c.metric}
                     </span>
                   </div>
-                  <h3 className="text-white font-bold text-xl mb-2">{c.niche}</h3>
-                  <p className="text-blue-300 font-semibold mb-3">{c.result}</p>
-                  <p className="text-white/55 text-sm leading-relaxed">{c.detail}</p>
+                  <div>
+                    <h3 className="text-white font-bold text-xl mb-1">{c.niche}</h3>
+                    <p className="text-blue-300 font-semibold text-base">{c.result}</p>
+                  </div>
+                  <ul className="flex flex-col gap-2">
+                    {c.steps.map((step, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-white/65 leading-relaxed">
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-400 text-xs flex items-center justify-center mt-0.5 font-semibold">{i + 1}</span>
+                        {step}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-auto pt-3 border-t border-white/10">
+                    <p className="text-xs text-white/40 italic">{c.highlight}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -217,8 +283,12 @@ export default function Index() {
         <section id="about" className="py-24 px-5 sm:px-10">
           <div className="max-w-4xl mx-auto">
             <div className="p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm flex flex-col md:flex-row items-center gap-10">
-              <div className="flex-shrink-0 w-32 h-32 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-5xl font-bold text-white shadow-2xl">
-                ДЯ
+              <div className="flex-shrink-0 w-36 h-36 rounded-2xl overflow-hidden shadow-2xl ring-2 ring-blue-400/30">
+                <img
+                  src="https://cdn.poehali.dev/projects/a9834d87-59e3-4d89-adeb-e42f92e1915b/bucket/949033fd-4f7d-4bad-9b32-15ff801bcaa3.png"
+                  alt="Дмитрий Янев"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Дмитрий Янев</h2>
