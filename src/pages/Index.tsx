@@ -1,4 +1,10 @@
 import { useState } from "react"
+
+declare global {
+  interface Window {
+    _tmr?: { push: (obj: object) => void }
+  }
+}
 import GradientBlinds from "@/components/GradientBlinds"
 import Navbar from "@/components/Navbar"
 import Icon from "@/components/ui/icon"
@@ -137,6 +143,7 @@ export default function Index() {
       if (res.ok) {
         setStatus("sent")
         setForm({ name: "", phone: "", message: "" })
+        window._tmr?.push({ type: 'reachGoal', id: 3760242, goal: 'form_submit' })
       } else {
         setStatus("error")
       }
@@ -190,6 +197,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <a
                 href="#contact"
+                onClick={() => window._tmr?.push({ type: 'reachGoal', id: 3760242, goal: 'consultation_click' })}
                 className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-black transition-all hover:bg-white/90 shadow-2xl"
               >
                 Бесплатная консультация
