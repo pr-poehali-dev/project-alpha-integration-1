@@ -320,10 +320,6 @@ export default function Index() {
         <section id="contact" className="py-24 px-5 sm:px-10">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 text-emerald-300 text-sm font-medium mb-6">
-                <Icon name="Gift" size={14} />
-                Лид-магнит: бесплатная консультация онлайн
-              </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Давайте поговорим</h2>
               <p className="text-white/60 text-lg">
                 Расскажите о вашем проекте — разберём ситуацию и найдём точки роста. Без обязательств.
